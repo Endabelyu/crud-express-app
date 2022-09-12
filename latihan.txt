@@ -1,0 +1,18 @@
+npm install sequelize@6.6.
+npm install sequelize@6.6.5
+SERVER_PORT=3001
+NODE_ENV=development
+JWT_KEY=rahasia
+
+MYSQL_USERNAME=
+MYSQL_PASSWORD=
+MYSQL_DATABASE=
+MYSQL_HOST=
+
+
+
+sequelize model:generate --name user --attributes firstname:string,lastname:string,username:string,email:string,password:string,roles:string
+
+sequelize model:generate --name post --attributes user_id:integer,title:string,body:text
+
+sequelize db:migrate

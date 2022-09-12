@@ -1,0 +1,25 @@
+{
+  "name": "crud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "build": "node src/index.js"
+  },
+  "author": "endabelyu",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "latest",
+    "sequelize-cli": "^6.4.1"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.6.5"
+  }
+}
